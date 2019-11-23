@@ -106,3 +106,28 @@ markdown_it_plus:
       enable: true
       options:
         strict: false
+
+
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/  # 插件在站点上的根目录(相对路径)
+  pluginJsPath: lib/      # 脚本文件相对与插件根目录路径
+  pluginModelPath: assets/  # 模型文件相对与插件根目录路径
+  tagMode: false    # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false   # 调试, 是否在控制台输出日志
+  model:
+    use: hijiki  # npm-module package name
+    scale: 1
+    # hHeadPos: 0.5
+    # vHeadPos: 0.618
+  display:
+    position: left
+    width: 150
+    height: 300
+    hOffset: +10
+  mobile:
+    show: true
+    scale: 0.5
+  react:
+    opacity: 0.8
