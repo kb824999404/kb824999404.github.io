@@ -98,3 +98,11 @@ deploy:
   type: git 
   repo: https://github.com/kb824999404/kb824999404.github.io
   branch: master
+
+markdown_it_plus:
+  plugins:
+    - plugin:
+      name: '@neilsustc/markdown-it-katex'
+      enable: true
+      options:
+        strict: false
