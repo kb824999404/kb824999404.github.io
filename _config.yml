@@ -131,3 +131,6 @@ live2d:
     scale: 0.5
   react:
     opacity: 0.8
+
+aplayer:
+  meting: true
