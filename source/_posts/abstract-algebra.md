@@ -62,5 +62,32 @@ $\therefore$ a^-1^为逆元
 ---
 
 ## 子群
-
-
+### 表示
+>子群：S$\leq$G 真子群：S<G
+### 子群运算
+A,B为G的非空子集，g$\in$G
+>AB={ab | a$\in$A，b$\in$B}
+>A^-1^={a^-1^ | a$\in$A}
+>gA={ga | g$\in$A}
+### 平凡子群
+单位子群{e}和群自身为所有群都有的子群，这两个群称为平凡子群
+$\Delta$.单群：只有两个子群，单位子群和自身
+### 几个命题
+>* S$\leq$G$\iff$$\forall$a,b$\in$S,a^-1^$\in$S$\iff$$\forall$a,b$\in$S,ab^-1^$\in$S
+>>**证明**：(i)$\Rightarrow$(ii) 由子群定义可知
+>(ii)$\Rightarrow$(iii) $\forall$a,b$\in$S,b^-1^$\in$S &emsp;$\therefore$ab^-1^$\in$S
+>(iii)$\Rightarrow$(i) aa^-1^=e$\in$S(单位元),ea^-1^=a^-1^$\in$S(逆元)
+>由b^-1^$\in$S,ab=a(b^-1^)^-1^$\in$S &emsp;运算对S封闭
+>* H$\leq$G,则H的单位元为G的单位元
+>* H<sub>1</sub>,H<sub>2</sub>$\leq$G$\Rightarrow$H<sub>1</sub>$\bigcap$H<sub>2</sub>$\leq$G
+>* H<sub>1</sub>,H<sub>2</sub>$\leq$G,则H<sub>1</sub>$\bigcup$H<sub>2</sub>$\leq$G$\iff$H<sub>1</sub>$\subseteq$H<sub>2</sub>或H<sub>2</sub>$\subseteq$H<sub>1</sub>
+>* H<sub>1</sub>,H<sub>2</sub>$\leq$G,则H<sub>1</sub>H<sub>2</sub>$\leq$G$\iff$H<sub>1</sub>H<sub>2</sub>=H<sub>2</sub>H<sub>1</sub>
+>>**证明**：$\Rightarrow$：$\forall$ab$\in$H<sub>1</sub>H<sub>2</sub>，(ab)^-1^$\in$H<sub>1</sub>H<sub>2</sub>
+>设(ab)^-1^=a<sub>1</sub>b<sub>1</sub>
+$\therefore$ ab=(a<sub>1</sub>b<sub>1</sub>)^-1^=b<sub>1</sub>^-1^a<sub>1</sub>^-1^$\in$H<sub>2</sub>H<sub>1</sub>
+$\therefore$ H<sub>1</sub>H<sub>2</sub>$\subseteq$H<sub>2</sub>H<sub>1</sub>
+同理可得H<sub>2</sub>H<sub>1</sub>$\subseteq$H<sub>1</sub>H<sub>2</sub>
+$\therefore$ H<sub>1</sub>H<sub>2</sub>=H<sub>2</sub>H<sub>1</sub>
+$\Leftarrow$：$\forall$a<sub>1</sub>b<sub>1</sub>,a<sub>2</sub>b<sub>2</sub>，(a<sub>1</sub>b<sub>1</sub>)(a<sub>2</sub>b<sub>2</sub>)^-1^
+=$a _ { 1 } b _ { 1 } b _ { 2 } ^ { - 1 } a _ { 2 } ^ { - 1 }$=$a _ { 1 } b'a _ { 2 } ^ { - 1 }$=$a _ { 1 } a' b''=a''b''$
+$\therefore$$H_{1}H_{2}$$\leq$G
