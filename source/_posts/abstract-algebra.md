@@ -26,12 +26,12 @@ categories:
 >* 有逆元
 >* 满足交换律
 #### 关系 
->半群->含幺半群->群->Abel群
+>半群$\rightarrow$含幺半群$\rightarrow$群$\rightarrow$Abel群
 #### 举例
 >* 群:(Z,+)
 >* Abel群:(Q,+),(R,+),(C,+)
 ### 群的阶
->群G的元素个数|G|称为群G的阶
+>群G的元素个数 |G| 称为群G的阶
 ### 群的运算
 * 可换群中的运算称为加法，可换群又叫加群
 * 加群的单位元叫零元，逆元叫负元
@@ -48,6 +48,19 @@ $\exists$ a<sub>1</sub>^-1^,a<sub>2</sub>^-1^,则a<sub>1</sub>^-1^=a<sub>1</sub>
     >* (a^-1^)^-1^=a
     >* a,b可逆，则ab可逆，(ab)^-1^=b^-1^a^-1^
     >* a可逆则a^n^可逆，(a^n^)^-1^=(a^-1^)^n^=a^-n^
+### 例题
+**半群(G,$\cdot$)是群的充要条件:**
+1.G有单位元e<sub>L</sub>，$\forall$a$\in$G，e<sub>L</sub>a=a
+2.$\forall$a$\in$G，有左逆元a^-1^，a^-1^a=e<sub>L</sub>
+>**证明**：
+>①证 aa^-1^=e<sub>L</sub>
+> aa^-1^=e<sub>L</sub>aa^-1^=(a^-1^)^-1^a^-1^aa^-1^=(a^-1^)^-1^e<sub>L</sub>a^-1^=(a^-1^)^-1^a^-1^=e<sub>L</sub>
+>②证左单位元也是右单位元：
+$\forall$a$\in$G,ae<sub>L</sub>=a(a^-1^a)=(aa^-1^)a=e<sub>L</sub>a
+>③$\because$ e<sub>L</sub>为单位元
+$\therefore$ a^-1^为逆元
+---
 
+## 子群
 
 
