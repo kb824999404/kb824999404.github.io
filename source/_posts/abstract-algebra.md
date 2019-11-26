@@ -96,7 +96,7 @@ $\Leftarrow$：$\forall$a<sub>1</sub>b<sub>1</sub>,a<sub>2</sub>b<sub>2</sub>，
 $\therefore$$H_{1}H_{2}$$\leq$G
 ### 元素的阶
 * a$\in$G,使a^n^=e成立的最小正整数n为a的阶，记o(a)
-$\Delta$. o(e)=1
+$\Delta. o(e)=1$
 * a$\in$G，则a^m^=1$\iff$o(a) | m
   >$\Rightarrow$：设$o ( a ) = n ,则 m = p n + r , 0 \leq r < n$
 $\therefore a ^ { m } = a ^ { p n + r } = a ^ { r } = 1$
@@ -143,3 +143,117 @@ $\therefore \operatorname { s | k } \quad\therefore ( r , s ) = 1 \quad \therefo
 $\therefore k = s$
 ---
 ## 生成元，同构
+### 生成元
+$a \in G ,\quad$ 令$H = \left\{ a ^ { k } | k \in Z \right\}$，此子群为由 $a$ 生成的循环子群$<a>$，则$a$为H的生成元
+### 同构
+对群 $( G , \cdot ) , \quad \left( G ^ { \prime } , \circ \right)$，若存在双射$f$从G到G'，$f ( a \cdot b ) = f ( a ) \circ f ( b ) ( \forall a , b \in G )$
+则称$f$为G的同构
+### 命题
+* $\left( Z, + \right)$的生成元为1或-1
+* $\left( Z _ { n } , + \right)$的生成元为$\bar { a } , ( a , n ) = 1$
+    >**证明**：设$z _ { n } = \langle \bar { a } \rangle \quad \because \bar{1}\in Z _ { n }$
+$\therefore$必有$k,k\bar{a}=\bar{1}  \Leftrightarrow \exists p \in Z , \quad k a + p n = 1$
+$\Leftrightarrow( a , n)  = 1$
+* （$Q,+$）与（$Q^{*},\cdot$）不同构
+    >**证明**：设（Q,+）与（Q^*^,$\cdot$）同构
+    设$f(a)=2$  ，则$f(a)=f(\frac{a}{2}+\frac{a}{2})=f(\frac{a}{2})f(\frac{a}{2})=\sqrt{2} \notin Q^{*}$
+* 循环群的子群仍是循环群，且
+    (1)$(Z,+)$的全部子群为$H_{m}=\langle m \rangle ,m=0,1,2,$…
+    (2)$(Z_{n},+)$的全部子群为$\langle \bar{0}\rangle$和$\lang \bar{d} \rangle,d|n$
+    >**证明**：(1)设$H \leqslant Z ,$若$H \neq \{ 0 \} ,$令$M = \{ x | x \in H , x > 0 \}$
+$\because x \in H \quad \therefore x \in H \quad \therefore M \neq \phi$
+由自然数集的良序性可知，$M$存在最小元$m$
+$\therefore \forall x \in M , \quad x=p m + r , \quad \therefore 0 \leq r < m , r = x - p m \in M$
+由$M$最小性得$r = 0 \quad \therefore M = \left\{ k m | k \in Z ^ { + } \right\}$
+$\therefore H = \{ k m | k \in Z \} = \langle m \rangle$
+(2) 令$Z _ { n } = \left\{ \bar { 0} , \bar {1} , \right.$$\cdots$$,\overline { n - 1 } \},$设$H \leqslant Z ,$且$H \neq \{ \overline { 0 } \}$
+令$M = \{ k | \bar { k } \in H \backslash \{ \overline { 0 } \} , k < n \} ,M \neq \phi$是自然数的子集，且由最小元$d$
+$\forall x \in M , x = p d + r , 0 \leq r < d , \bar { r } = \bar { x } - p \bar { d } \in H$
+$\because d$为最小元$\quad \therefore r =0$
+$\therefore M = \{ kd | k > 0 \} , H = \{ k \bar{d} | k = 0,1,2 , \cdots \}$
+由$d$最小$\Rightarrow \exists m \in z ^ { + } , m d = n$
+$\therefore H = \{ \overline { 0 } , \bar { d } , \bar { 2d }  , \cdots , \bar{(m - 1)d} \rangle,d|n$
+
+---
+## 陪集
+### 几个定价命题
+* $aH = H \Leftrightarrow a\in H$
+    >$\Leftarrow$:由定义可知
+$\Rightarrow: e \in H , \quad \exists h ^ { \prime } \in H , \quad a h ^ { \prime } = e$
+* $b \in a H \Leftrightarrow a H = b H$
+    >$\Rightarrow: b \in a H  \therefore \exist h ^ { \prime } \in H \quad b = a h ^ { \prime }$
+$b H = a h ^ { \prime } H = a H$
+$\Leftarrow: e \in H \quad$ be $\in aH$
+* $a H = b H \Leftrightarrow a ^ { - 1 } b \in H \left( H a = H b \Leftrightarrow b a ^ { - 1 }\in H \right)$
+    >$\Rightarrow: H = a ^ { - 1 } b H \quad \therefore a ^ { - 1 } b \in H$
+$\Leftarrow a ^ { - 1 } b \in H \quad \exists h \in H \quad a ^ { - 1 } b = h \quad b = a h \in a H$
+### 子群指数
+$H \leq G$,$H$在$G$中的左（右）陪集个数，用$[ G: H ]$表示
+### 拉格朗日定理
+$H \leq G , | G | = | H | [G:H]$
+* G为有限群，$H\leq G,$则$|H| | |G|$
+* 当$|G| < \infty$时，$\forall a \in G,o ( a ) | | G |$
+* 若$| G | = p$(素数)，则$G = C _ { p}$，即素数阶群必为循环群
+    >**证明**:$\forall a \in G , a \neq e$，由$( 2 ): \circ ( a ) | | a | = P$
+$\because o ( a ) > 1 \quad \therefore o ( a ) = p$
+$\therefore G=\langle a \rangle$
+### 命题
+* $A = \{ a H|a \in G \}$构成划分
+* $| A B | = \frac { | A | |B | } { | A \cap B | }$
+* $A \leqslant G , B \leqslant G , \exists g , h \in G , A g = B h ,$则$ A = B$
+    >**证明**:$A \subseteq B ,$由于$Ag=Bh$
+    $\therefore g = b h, \quad \forall a \in A,abh=ag=b_{1}h$
+$\therefore a = b_{1} b ^ { - 1 } \in B$
+
+---
+## 正规子群和商群
+### 正规子群
+$H \leqslant G, \forall g \in G , \quad g H = H g ,$则称H为G的正规子群，记为$H \unlhd G$
+### 性质
+$\forall a \in G , a H = H a \Leftrightarrow \forall a \in G , \forall h \in H , a h a ^ { - 1 } \in H$
+$\Leftrightarrow \forall a \in G , a H a ^ { - 1 } \subseteq H \Leftrightarrow \forall a \in G , aHa ^ { - 1 } = H$
+>$\begin{aligned} 1 \Rightarrow 2 &: \forall a \in G , \forall h \in H , a h \in H a \Rightarrow a h = h_{1} a \\ & \Rightarrow a h a ^ { - 1 } = h_{1} \in H \\ 2 \Rightarrow 3 &:  a ha^{-1} \Rightarrow a H a ^ { - 1 } \subseteq H \end{aligned}$
+$3 \Rightarrow 4: \forall a \in G, aHa^{-1}$ $\subseteq H$
+$\because a ^ { - 1 } \in G \quad \therefore a ^ { - 1 } H \left( a ^ { - 1 } \right)^{-1} = a ^ { - 1 } H a\subseteq H$
+$\forall h \in H , a ^ { - 1 } h a = h_{1}\in H$
+$\therefore h = a h a ^ { - 1 } \in aHa ^ { - 1 }$
+$\therefore H \subseteq a H a ^ { - 1 } \quad \therefore H = a H a ^ { - 1 }$
+>$4\Rightarrow 1: a H a ^ { - 1 } \Rightarrow \left( a H a ^ { - 1 } \right) a = H a \Rightarrow aH=Ha$
+### 商群
+$H \unlhd G,G / H = \{ a H | a \in G \} = \{ H a | a \in G \},G/H$关于子集乘法构成的群称为G关于H的商群
+### 命题
+* 指数为2的子群为正规子群
+    >**证明**:$H \leqslant G , \quad [ G: H ] = 2$
+取$G \in G$ \ $H \quad$ 则$aH \cap H = \phi$
+$G = H U a H = H U H a \quad$
+$\therefore a H = a$ \ $H= H a$
+$\therefore H \unlhd G$
+* $A \unlhd G , B \unlhd G ,$则$A \cap B \unlhd G , A B \unlhd G$
+    >**证明**:
+    $(1)\forall h \in A \cap B , g \in G$
+    $\because h \in A , A \unlhd G$
+$\therefore ghg ^ { - 1 } \in A$
+$\because h \in B , B \unlhd G \quad \therefore g h g ^ { - 1 } \in B$
+$\therefore g h g ^ { - 1 } \in A \cap B \quad \therefore A \cap B \unlhd G$
+$(2)$先证$A B \leqslant G \quad$
+由于$A\unlhd G \quad \therefore A B = B A\quad \therefore A B \leq G$(由子群性质可得)
+再证$A B\unlhd G: \forall g \in G , a b \in A B$
+$g a b g ^ { - 1 } = \left( g a g ^ { - 1 } \right) \left( gbg ^ { - 1 } \right) = a_{1} b_{1} \in A B$
+$\therefore A B \unlhd G$
+* $A \unlhd G , B \leq G ,$则$A \cap B \unlhd B , A B \leqslant G$
+    >$(1)\forall h \in A \cap B , b \in B$
+$\because h \in A , b \in G  \quad: b h b ^ { - 1 } \in A$
+$\because h \in B \quad \therefore b h b ^ { - 1 } \in B \quad \therefore b h b ^ { - 1 } \in A \cap B$
+$\therefore A \cap B \unlhd B$
+$(2)A \unlhd G \quad \therefore A B = B A \quad \therefore A B \leqslant G$
+---
+## 群的同态
+
+---
+## 环
+
+---
+## 子环
+
+---
+## 环的同构与同态
