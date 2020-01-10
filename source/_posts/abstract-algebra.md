@@ -53,10 +53,10 @@ $\exists$ a<sub>1</sub>^-1^,a<sub>2</sub>^-1^,则a<sub>1</sub>^-1^=a<sub>1</sub>
     >* a可逆则a^n^可逆，(a^n^)^-1^=(a^-1^)^n^=a^-n^
 ### 例题
 **半群(G,$\cdot$)是群的充要条件:**
-1.G有单位元e<sub>L</sub>，$\forall$a$\in$G，e<sub>L</sub>a=a
+1.G有左单位元e<sub>L</sub>，$\forall$a$\in$G，e<sub>L</sub>a=a
 2.$\forall$a$\in$G，有左逆元a^-1^，a^-1^a=e<sub>L</sub>
 >**证明**：
->①证 aa^-1^=e<sub>L</sub>
+>①证左逆元也是右逆元
 > aa^-1^=e<sub>L</sub>aa^-1^=(a^-1^)^-1^a^-1^aa^-1^=(a^-1^)^-1^e<sub>L</sub>a^-1^=(a^-1^)^-1^a^-1^=e<sub>L</sub>
 >②证左单位元也是右单位元：
 $\forall$a$\in$G,ae<sub>L</sub>=a(a^-1^a)=(aa^-1^)a=e<sub>L</sub>a
@@ -129,13 +129,14 @@ $\because$有一个单位元，G有偶数个元素
 $\therefore$至少有一个二阶元
 * $\forall a , b \in G , o(ab) = o ( b a )$
     >**证明**:设$o( a b ) = n \quad$则$( ab ) ^ { n } = e$
-$( a b ) ^ { n } = \underbrace { a ^ { ( b a ) } ( b a ) \cdots ( b a ) } _ { n - 1 } = a ( b a ) ^ { n - 1 } b = e$
-$\therefore o(ba)|n \quad$即$o(ba)|o(ab)$
-$\therefore ( b a ) ^ { n - 1 } = a ^ { - 1 } b ^ { - 1 } \quad ( b a ) ^ { n } = e$
-$\therefore o ( ab ) | o ( b a ) \quad \therefore o ( a b ) = o ( b a )$
+$( a b ) ^ { n } = \underbrace { a ( b a ) \cdots ( b a ) } _ { n - 1 } = a ( b a ) ^ { n - 1 } b = e$
+$\therefore b( b a ) ^ { n}=b,( b a ) ^ { n}b=b$
+$\therefore ( b a ) ^ { n } = e$
+$\therefore o ( ab ) | o ( b a ) \quad$同理$o ( ba ) | o ( ab ) \quad$
+$\therefore o ( a b ) = o ( b a )$
 * $a\in G,o(a)=n,则o(a^{m})=n/(m,n)$
     >证能互相整除
-设$o\left( a ^ { n } \right) = k , \quad ( m , n ) = d$
+设$o\left( a ^ { m } \right) = k , \quad ( m , n ) = d$
 令$m = r d , n = s d , \quad n / ( m , n ) = s$
 ①.$( a ^ { m } ) ^ { s } = a ^ { m s } = a ^ { n r } = e \quad \therefore k | s$
 ②.$\left( a ^ { m } \right) ^ { k } = a ^ { m k } = e \quad \therefore n | m k$
@@ -248,6 +249,7 @@ $\therefore A \cap B \unlhd B$
 $(2)A \unlhd G \quad \therefore A B = B A \quad \therefore A B \leqslant G$
 ---
 ## 群的同态
+### 定义
 
 ---
 ## 环
