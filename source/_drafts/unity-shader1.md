@@ -1,12 +1,13 @@
 ---
 title: UnityShader入门(一)
 subtitle: 渲染流水线
-date: 2020-01-06 18:35:02
 tags:
  - Unity3D
  - Shader
 categories: 
  - 计算机图形学
+top_img: /images/shader.jpg
+cover: /images/shader.jpg
 ---
 
 # 渲染流水线
