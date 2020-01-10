@@ -1,0 +1,9 @@
+window.$crisp=[];
+window.CRISP_WEBSITE_ID="d9932fd6-ba18-49aa-9778-7d25b6f99bc7";
+(function(){
+    d=document;
+    s=d.createElement("script");
+    s.src="https://client.crisp.chat/l.js";
+    s.async=1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+})();
