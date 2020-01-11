@@ -1,5 +1,5 @@
 ---
-title: UnityShader入门(一)
+title: UnityShader入门笔记(一)
 subtitle: 渲染流水线
 tags:
  - Unity3D
@@ -101,3 +101,4 @@ cover: /images/shader.jpg
 * 有一些特定类型的着色器，如顶点着色器、片元着色器
 * 依靠着色器可以控制流水线中的渲染细节
 ---
+**参考：** <a href="https://github.com/candycat1992/Unity_Shaders_Book">《Unity Shader入门精要》</a>
