@@ -1,14 +1,16 @@
 ---
 title: UnityShader入门笔记(二)
-subtitle: Unity Shader基础
 tags:
- - Unity3D
- - Shader
-categories: 
- - 计算机图形学
+  - Unity3D
+  - Shader
+subtitle: Unity Shader基础
+categories:
+  - 计算机图形学
 top_img: /images/shader.jpg
 cover: /images/shader.jpg
+date: 2020-01-14 14:47:29
 ---
+
 # Unity Shader基础
 ---
 ## Unity Shader概述
