@@ -11,7 +11,7 @@ top_img: /images/math.jpg
 cover: /images/math.jpg
 ---
 
-# 抽象代数笔记
+# 群、环、域
 ## 群
 ### 群的定义
 #### 半群
@@ -250,12 +250,60 @@ $(2)A \unlhd G \quad \therefore A B = B A \quad \therefore A B \leqslant G$
 ---
 ## 群的同态
 ### 定义
+两个群 $(G,\cdot )(G',\circ )$，若存在$f:G \rightarrow G'$,$\forall a,b \in G,f(a \cdot b)=f(a) \circ f(b)$，则称$f$是$G$到$G'$的一个同态，表示为$G \stackrel{f}{\sim } G'$
+如果$f$为单射，则称为单同态，$f$为满射，则称为满同态，$f$为双射，则称为同构，同构记为$G \cong G'$
+
+### 同态基本定理
+* **核：**$G \stackrel{f}{\sim } G'$，$K = \left\{ a | a \in G , f ( a ) = e' \right\} = f ^ { - 1 } \left( e'\right)$，$K$是同态$f$的核，记为$Kerf$
+* $K$是群
+* $K\unlhd G$
+* $\forall a ^ { \prime } \in Im f ,$若$f ( a ) = a ^ { \prime } ,$则$f ^ { - 1 } \left( a ^ { \prime } \right) = a k$ 
+* $G / K \cong  G'$
+    >**证明**:
+    $G / K = \{ gK | g \in G \} \quad \sigma : g K \rightarrow f ( g ) \quad  (G / K \rightarrow G')$
+    $\forall g_{1} , g _ { 2 } \in G,\quad$设$g _ { 1 } K = g _ { 2 } K$
+    则$g _ { 1 } ^ { - 1 } g _ { 2 } \in K \Leftrightarrow f \left( g _ { 1 } ^ { - 1 } g_{2} \right) =e'$
+    $\Leftrightarrow f \left( g _ { 1 } \right) = f \left( g _ { 2 } \right)$
+    $\therefore \sigma$为单射
+    $\forall b \in G ^ { \prime } , \exists a \in G , f ( a ) = b$
+    $\therefore a k \in G / K \quad \sigma ( a k ) = f ( a ) = b$
+    $\therefore \sigma$为满射
+    $\sigma \left( g _{1}k g _ { 2 } k \right) = \sigma \left( g_{1} g_{2} k \right) = f \left( g _ { 1 } g _ { 2 } \right)$
+    $=f \left( g_ { 1 } \right) f ( g_{2} ) = \sigma \left( g_ { 1 } k \right) \sigma ( g_{2}k )$
+    $\therefore \sigma$为同构 
+* $G \stackrel{f}{\sim } G'$，$\varphi$是$G$到$G/K$的自然同态，$\exist G/K$到$G'$的同构$\sigma$使$f=\sigma \varphi$
+    >$\sigma : g K \rightarrow f ( g )$
+    $\forall x\in G$，$(\sigma \varphi)(x)=\sigma(\varphi(x))=\sigma(xK)=f(x)$
+    $\therefore \sigma \varphi=f$
+
 
 ---
 ## 环
-
+### 定义
+* $A$是非空集合，$(A,+)$为可换群，$(A,\cdot)$为半群，且满足加法和乘法的分配率，则称$(A,+,\cdot)$为环
+* 若对乘法可换，则称可换环
+### 零因子
+$ab=0,a\neq0,b\neq0,a$为零因子，b为右零因子
+### 整环
+无零因子的可换环
+### 除环
+至少有两个元素：单位元和逆元，$A^{*}=A\backslash\{0\}$构成乘法群
+### 域
+* 可换的除环或乘法构成群的整环
+* 最简单的域：$\{ 0,1 \}$
+* 环无零因子的充分必要条件是乘法消去律成立
+* 有限的无零因子环是除环（满足消去律，乘法成群）
+* 有限整环是域（同时为除环和整环）
 ---
 ## 子环
-
+* **子环性质:**
+  * $S\subseteq A,\forall a,b \in S,a-b \in S,ab \in S \Leftrightarrow S$为$A$的子环
+  * $S_{1},S_{2}$为$A$子环$\Rightarrow S_{1}\cap S_{2}$为$A$子环
+* **左理想、右理想：** 相当于群的陪集
+* **理想：** 相当于正规子群
+* **商环：**$A$为环，$I$为$A$的理想，$A$作为加群关于$I$的商群$A/I=\{a+I|a\in A\}$
 ---
 ## 环的同构与同态
+环$A$和$A'$，有$f:A\rightarrow A'$，$\forall a,b \in A$，$f(a+b)=f(a)+f(b)$，$f(ab)=f(a)\circ f(b)$，称$f$为同态，若$f$为单射，称单同态，若$f$为满射，称满同态，若$f$为双射，称同构
+
+---
