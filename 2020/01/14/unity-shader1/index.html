@@ -83,7 +83,7 @@ function activateLightMode(){
 <li>几何阶段</li>
 <li>光栅化阶段</li>
 </ul>
-<center><img width="400" data-src="render-pipeline.png" class="lazyload"></center>
+<center><img width="400" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader1/render-pipeline.png" class="lazyload"></center>
 <hr>
 <h2 id="应用阶段application-stage"><a class="markdownIt-Anchor" href="#应用阶段application-stage"></a> 应用阶段(Application Stage)：</h2>
 <ul>
@@ -93,7 +93,7 @@ function activateLightMode(){
 </ul>
 <hr>
 <h2 id="gpu流水线"><a class="markdownIt-Anchor" href="#gpu流水线"></a> GPU流水线：</h2>
-<center><img width="700" data-src="gpu-pipeline.png" class="lazyload"></center>
+<center><img width="700" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader1/gpu-pipeline.png" class="lazyload"></center>
 <h3 id="几何阶段geometry-stage"><a class="markdownIt-Anchor" href="#几何阶段geometry-stage"></a> 几何阶段(Geometry Stage):</h3>
 <ul>
 <li><strong>顶点着色器(Vertex Shader)</strong>:完全可编程，实现顶点的空间变换、顶点着色等功能</li>
@@ -115,7 +115,7 @@ function activateLightMode(){
 <li>输入的每个顶点都会调用一次顶点着色器，不可创建或销毁顶点，无法得到顶点间的关系（如是否属于同一个三角网络）。主要工作：进行坐标变换和逐顶点光照，还可以计算和输出顶点的颜色。</li>
 <li>坐标变换:把顶点坐标从模型空间转换到其次裁剪空间，可以在这一步中改变顶点的位置，最终得到归一化的设备坐标(Normalized Device Coordinates,NDC)</li>
 </ul>
-<center><img width="350" data-src="vertex-transform.png" class="lazyload"></center>
+<center><img width="350" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader1/vertex-transform.png" class="lazyload"></center>
 <h3 id="裁剪clipping"><a class="markdownIt-Anchor" href="#裁剪clipping"></a> 裁剪(Clipping):</h3>
 <ul>
 <li>图元和摄像机视野关系：完全在视野内、部分在视野内、完全在视野外</li>
@@ -135,35 +135,35 @@ function activateLightMode(){
 <li>检查每个像素是否被一个三角网络所覆盖，如果被覆盖的话生成一个片元，使用三个顶点的顶点信息对整个覆盖区域的元素进行插值</li>
 <li>输出一个片元序列</li>
 </ul>
-<center><img width="500" data-src="triangle-traversal.png" class="lazyload"></center>
+<center><img width="500" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader1/triangle-traversal.png" class="lazyload"></center>
 <h3 id="片元着色器fragment-shader"><a class="markdownIt-Anchor" href="#片元着色器fragment-shader"></a> 片元着色器(Fragment Shader):</h3>
 <ul>
 <li>对单个片元进行操作，输出一个或多个颜色值，可完成许多重要的渲染技术如纹理采样</li>
 <li><strong>纹理采样</strong>:在顶点着色器阶段输出每个顶点对应的纹理坐标，经过光栅化阶段对三角网络的三个顶点对应的纹理坐标进行插值，得到其覆盖的片元的纹理坐标</li>
 </ul>
-<center><img width="500" data-src="fragment-shader.png" class="lazyload"></center>
+<center><img width="500" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader1/fragment-shader.png" class="lazyload"></center>
 <h3 id="逐片元操作per-fragment-operations"><a class="markdownIt-Anchor" href="#逐片元操作per-fragment-operations"></a> 逐片元操作(Per-Fragment Operations):</h3>
 <h4 id="主要任务"><a class="markdownIt-Anchor" href="#主要任务"></a> 主要任务：</h4>
 <ul>
 <li>决定每个片元的可见性，进行测试工作如深度测试、模板测试</li>
 <li>对通过测试的片元，把片元的颜色值和已经存储在颜色缓冲区中的颜色进行合并</li>
 </ul>
-<center><img width="400" data-src="per-fragment.png" class="lazyload"></center>
+<center><img width="400" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader1/per-fragment.png" class="lazyload"></center>
 <h4 id="测试"><a class="markdownIt-Anchor" href="#测试"></a> 测试：</h4>
-<center><img width="600" data-src="fragment-test.png" class="lazyload"></center>
+<center><img width="600" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader1/fragment-test.png" class="lazyload"></center>
 <h4 id="合并"><a class="markdownIt-Anchor" href="#合并"></a> 合并</h4>
 <ul>
 <li>对不透明物体，可以关闭混合(Blend)操作，片元着色器计算得到的颜色值会覆盖颜色缓冲区中的像素值</li>
 <li>对半透明物体，需开启混合操作，对源颜色和目标颜色使用混合函数进行混合，可以选择混合模式</li>
 </ul>
-<center><img width="450" data-src="blend.png" class="lazyload"></center>
+<center><img width="450" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader1/blend.png" class="lazyload"></center>
 <ul>
 <li>将图元显示到屏幕上，使用双重缓冲(Double Buffering)</li>
 </ul>
 <hr>
 <h1 id="其他问题"><a class="markdownIt-Anchor" href="#其他问题"></a> 其他问题</h1>
 <h2 id="opengldirectx"><a class="markdownIt-Anchor" href="#opengldirectx"></a> OpenGL/DirectX</h2>
-<center><img width="300" data-src="relation.png" class="lazyload"></center>
+<center><img width="300" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader1/relation.png" class="lazyload"></center>
 <h2 id="hlsl-glsl-cg"><a class="markdownIt-Anchor" href="#hlsl-glsl-cg"></a> HLSL、GLSL、CG</h2>
 <ul>
 <li><strong>GLSL(OpenGL Shading Language)</strong>:
@@ -187,7 +187,7 @@ function activateLightMode(){
 <li>CPU调用图像编程接口</li>
 <li>CPU和GPU的并行工作使用一个命令缓冲区，调用DrawCall之前，CPU需要向GPU发送很多内容，需完成很多工作，GPU渲染速度往往快于CPU提交命令的速度，因此应尽量减少DrawCall</li>
 </ul>
-<center><img width="300" data-src="drawcall.png" class="lazyload"></center>
+<center><img width="300" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader1/drawcall.png" class="lazyload"></center>
 <hr>
 <h1 id="shader"><a class="markdownIt-Anchor" href="#shader"></a> Shader</h1>
 <ul>

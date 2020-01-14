@@ -102,7 +102,7 @@ function activateLightMode(){
 <li>PropertyType：属性类型</li>
 <li>DefaultValue：属性默认值</li>
 </ul>
-<center><img width="600" data-src="propertyType.png" class="lazyload"></center>
+<center><img width="600" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader2/propertyType.png" class="lazyload"></center>
 <ul>
 <li>数字类型：<code>Int</code>、<code>Float</code>、<code>Range</code>，默认值为一个数字</li>
 <li>颜色和向量类型：<code>Color</code>、<code>Vector</code>，默认值为一个四维向量</li>
@@ -115,12 +115,12 @@ function activateLightMode(){
 <li>每个Pass定义了一次完整的渲染流程，状态和标签也可以在Pass中声明，但两者使用的标签是不一样的。在SubShader进行的设置会用于所有Pass</li>
 <li>状态设置：</li>
 </ul>
-<center><img width="600" data-src="rendersetup.png" class="lazyload"></center>
+<center><img width="600" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader2/rendersetup.png" class="lazyload"></center>
 <ul>
 <li>SubShader的标签：怎样以及何时渲染这个对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Tags &#123; &quot;TagName1&quot;=&quot;Value1&quot; &quot;TagName2&quot;=&quot;Value2&quot;&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<center><img width="600" data-src="subshadertags.png" class="lazyload"></center>
+<center><img width="600" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader2/subshadertags.png" class="lazyload"></center>
 <ul>
 <li>Pass语义块</li>
 </ul>
@@ -129,7 +129,7 @@ function activateLightMode(){
 <li>名称：<code>Name &quot;MyPassName&quot;</code>，通过名称，可以使用UsePass命令来使用其他Unity Shader中的Pass，如<code>UsePass &quot;Myshader/MYPASSNAME&quot;</code>，Unity内部会把所有Pass名称转换成大写字母，因此使用UsePass命令必须使用大写形式的名字</li>
 <li>Pass中的标签：怎样渲染物体</li>
 </ul>
-<center><img width="600" data-src="passtags.png" class="lazyload"></center>
+<center><img width="600" data-src="https://cdn.jsdelivr.net/gh/kb824999404/blogPic/img/unity-shader2/passtags.png" class="lazyload"></center>
 <h3 id="fallback"><a class="markdownIt-Anchor" href="#fallback"></a> Fallback</h3>
 <ul>
 <li>所有SubShader都不能运行时的备选Shader  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Fallback &quot;name&quot;</span><br></pre></td></tr></table></figure>
