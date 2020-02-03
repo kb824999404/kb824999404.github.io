@@ -3,7 +3,6 @@ title: UnityShader入门笔记(二)
 tags:
   - Unity3D
   - Shader
-subtitle: Unity Shader基础
 categories:
   - 计算机图形学
 top_img: /images/shader.jpg

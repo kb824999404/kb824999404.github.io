@@ -3,7 +3,6 @@ title: UnityShader入门笔记(一)
 tags:
   - Unity3D
   - Shader
-subtitle: 渲染流水线
 categories:
   - 计算机图形学
 top_img: /images/shader.jpg
