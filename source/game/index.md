@@ -13,5 +13,5 @@ comments: false
 * <a href="http://106.54.28.81:1455/AI/index.html"><font color="#87CEFA">AI Test</font></a>
 * <a href="http://106.54.28.81:1455/Workers/index.html"><font color="#87CEFA">Workers</font></a>
 * <a href="http://106.54.28.81:1455/3DBeginner/index.html"><font color="#87CEFA">3D Beginner</font></a>
-
+* <a href="http://106.54.28.81:1455/Snake/index.html"><font color="#87CEFA">3D贪吃蛇</font></a>
 ---
