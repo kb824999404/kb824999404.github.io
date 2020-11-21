@@ -10,7 +10,7 @@ comments: false
 <style>
 #title {
     color: #708090;
-}g
+}
 #tltle:hover {
     color: yellow;
 }
@@ -22,4 +22,5 @@ comments: false
 * <a href="http://106.54.28.81:1455/3DBeginner/index.html"><font color="#87CEFA">3D Beginner</font></a>
 * <a href="http://106.54.28.81:1455/Snake/index.html"><font color="#87CEFA">3D贪吃蛇</font></a>
 * <a href="http://106.54.28.81:1455/Elevator/index.html"><font color="#87CEFA">Elevator</font></a>
+* <a href="http://106.54.28.81:1455/RunHit/index.html"><font color="#87CEFA">RunHit</font></a>
 ---

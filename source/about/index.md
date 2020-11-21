@@ -4,5 +4,4 @@ type: about
 comments: false
 ---
 # About
-上海黄渡理工大学在读大二学生。
-热爱学习，热爱技术。
+热爱技术，热爱音乐的大三狗。
