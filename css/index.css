@@ -2162,6 +2162,85 @@ blockquote footer cite:before {
   content: "";
   line-height: 0.3rem;
 }
+.cg .pic-cards {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.cg .pic-cards .cg-img {
+  width: 220px;
+  height: auto;
+  background: #fff;
+  outline: none;
+  overflow: hidden;
+  margin: 10px 5px;
+  border-radius: 10px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+}
+.cg .pic-cards .cg-img a {
+  position: relative;
+}
+.cg .pic-cards .cg-img img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -o-box-flex: 0;
+  -ms-box-flex: 0;
+  box-flex: 0;
+  -webkit-flex-grow: 0;
+  flex-grow: 0;
+}
+.cg .pic-cards .cg-img:hover {
+  -webkit-transform: translate(0, -10px);
+  -moz-transform: translate(0, -10px);
+  -o-transform: translate(0, -10px);
+  -ms-transform: translate(0, -10px);
+  transform: translate(0, -10px);
+}
+@media screen and (max-width: 1200px) {
+  .cg .pic-cards .cg-img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .cg .pic-cards .cg-img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cg {
+    width: 100% !important;
+  }
+  .cg .pic-cards .cg-img {
+    width: 100%;
+  }
+}
 #disqus_thread {
   margin-top: 1rem;
 }
@@ -3303,7 +3382,8 @@ blockquote footer cite:before {
 }
 #page,
 .category-content,
-.flink {
+.flink,
+.cg {
   padding: 40px 44px 44px;
 }
 #page,
@@ -3311,6 +3391,7 @@ blockquote footer cite:before {
 #archive,
 .tag-cloud,
 .flink,
+.cg,
 #tag,
 #category {
   -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
@@ -3330,6 +3411,7 @@ blockquote footer cite:before {
 #archive:hover,
 .tag-cloud:hover,
 .flink:hover,
+.cg:hover,
 #tag:hover,
 #category:hover {
   -webkit-box-shadow: 0 4px 12px 12px rgba(7,17,27,0.15);
@@ -3511,6 +3593,7 @@ blockquote footer cite:before {
   #archive,
   .tag-cloud,
   .flink,
+  .cg,
   #tag,
   #category {
     padding: 1.8rem 1.3rem;
