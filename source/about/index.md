@@ -4,4 +4,4 @@ type: about
 comments: false
 ---
 # About
-热爱技术，热爱音乐的大三狗。
+软工专业在读大三狗，音乐、游戏、CG爱好者~~
