@@ -12,7 +12,7 @@ menu:
   友链: /link/ || fa fa-link
   留言板: /board/ || fa fa-coffee
   关于: /about/ || fa fa-heart
-  清单||fa fa-list:
+  其它||fa fa-list:
     - 音乐 || /music/ || fa fa-music
     - 游戏 || /game/  || fa fa-gamepad
     - CG || /cg/  || fa fa-picture-o

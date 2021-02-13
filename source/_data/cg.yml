@@ -2,26 +2,36 @@ class:
   class_name: 个人CG作品集
   item_list:
     1:
-      1:
-        name: CatAndStarsky
-        src: https://ian824.gitee.io/blogpic/cg/cat_starsky.png
-      2:
-        name: LowpolyCar
-        src: https://ian824.gitee.io/blogpic/cg/lowpoly_car.png
-      3:
-        name: Aircraft
-        src: https://ian824.gitee.io/blogpic/cg/aircraft.png
+      year: 2020
+      img_list:
+        1:
+          1:
+            name: LowpolyCar
+            src: https://ian824.gitee.io/blogpic/cg/lowpoly_car.png
+          2:
+            name: Aircraft
+            src: https://ian824.gitee.io/blogpic/cg/aircraft.png
+        2:
+          1:
+            name: Airplane
+            src: https://ian824.gitee.io/blogpic/cg/airplane.png
+          2:
+            name: Clock
+            src: https://ian824.gitee.io/blogpic/cg/clock.png
+        3:
+          1:
+            name: C4D
+            src: https://ian824.gitee.io/blogpic/cg/ian_c4d.png
+          2:
+            name: Cartoonboy
+            src: https://ian824.gitee.io/blogpic/cg/cartoon_boy.png
     2:
-      1:
-        name: Airplane
-        src: https://ian824.gitee.io/blogpic/cg/airplane.png
-      2:
-        name: Clock
-        src: https://ian824.gitee.io/blogpic/cg/clock.png
-    3:
-      1:
-        name: C4D
-        src: https://ian824.gitee.io/blogpic/cg/ian_c4d.png
-      2:
-        name: Cartoonboy
-        src: https://ian824.gitee.io/blogpic/cg/cartoon_boy.png
+      year: 2021
+      img_list:
+        1:
+          1:
+            name: CatAndStarsky
+            src: https://ian824.gitee.io/blogpic/cg/cat_starsky.png
+
+
+

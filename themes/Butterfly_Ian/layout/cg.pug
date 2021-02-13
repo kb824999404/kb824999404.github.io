@@ -1,17 +1,20 @@
 .cg
   each i in site.data.cg 
     h1= i.class_name 
-    .pic-cards
-      each col in i.item_list
-        .cg-col
-          each item in col
-            .cg-img
-              a(href=item.src  title=item.name target="_blank")
-                  if theme.lazyload.enable
-                    img.lazyload(data-src=item.src onerror=`onerror=null;src='${theme.lodding_bg.flink}'` height="72px")
-                  else
-                    img(src=item.src onerror=`onerror=null;src='${theme.lodding_bg.flink}'` height="72px")
-
+      each year in i.item_list
+        hr
+        h2= year.year
+          .pic-cards
+            each col in year.img_list
+              .cg-col
+                each item in col
+                  .cg-img
+                    a(href=item.src  title=item.name target="_blank")
+                        if theme.lazyload.enable
+                          img.lazyload(data-src=item.src onerror=`onerror=null;src='${theme.lodding_bg.flink}'` height="72px")
+                        else
+                          img(src=item.src onerror=`onerror=null;src='${theme.lodding_bg.flink}'` height="72px")
+        
 if theme.aplayer.enable
   include includes/aplayer.pug
 
