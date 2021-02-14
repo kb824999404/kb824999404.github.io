@@ -32,6 +32,10 @@ class:
           1:
             name: CatAndStarsky
             src: https://ian824.gitee.io/blogpic/cg/cat_starsky.png
+        2:
+          1:
+            name: LowpolyWorld
+            src: https://ian824.gitee.io/blogpic/cg/lowpolyworld.png
 
 
 
